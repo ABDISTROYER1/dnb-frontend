@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "node init && next dev --turbopack",
+    "build": "node init && next build",
     "analyze": "ANALYZE=true next build",
-    "start": "next start",
+    "start": "node init && next start",
     "lint": "next lint --dir app --dir components --dir lib --dir hooks --dir contexts --dir types --dir __tests__ --dir e2e",
     "lint:any": "node scripts/check-explicit-any.mjs",
     "a11y": "eslint --config eslint.config.a11y.mjs components app",
